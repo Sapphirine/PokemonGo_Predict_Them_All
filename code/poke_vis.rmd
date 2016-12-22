@@ -1,0 +1,60 @@
+---
+title: "pokemon"
+output: word_document
+---
+##build visualization on the training & test accuracy of Random Forest classifier
+setwd('/Users/tianhaolu/Desktop/ColumbiaClasses/EECS6893/Project')
+acc=read.csv('RF_accuracy.csv')
+head(acc)
+library(ggplot2)
+p1 <- ggplot(acc, aes(x=Max.Depth.Train, y=Train.Accuracy, group=Trees.Train))
+p1 + geom_line(aes(colour = Trees.Train)) + scale_colour_gradient(low="green")+ylim(40,100)+xlab("max depth")+labs(title = "Training Accuracy on Normal Type Prediction")
+p1
+#p1+scale_colour_gradient(name="Experimental\nCondition")
+
+p2 <- ggplot(acc, aes(x=Max.Depth.Test, y=Test.Accuracy, group=Tree.Test))
+p2 + geom_line(aes(colour = Tree.Test)) + scale_colour_gradient(low="red")+ylim(54,60)+xlab("max depth")+labs(title = "Testing Accuracy on Normal Type Prediction")
+
+
+####import the df_NY that was created from python.###
+df_NY=read.csv('df_NY.csv')
+rarity=cbind(df_NY$rareness,df_NY$appearedHour,df_NY$ones)
+colnames(rarity)=c('rareness','hour','ones')
+
+rarity=data.table(rarity)
+setkeyv(rarity, c('rareness', 'hour'))
+rarity[, lapply(.rarity$ones,sum), by=list(rareness,hour)]
+aggregate( rarity[,1:2], rarity[,3], FUN = sum )
+rarity=as.matrix(rarity)
+df2 <- ddply(rarity, c("rareness", "hour"), function(x) colSums(x[c("ones")]))
+
+##create the frequency VS hour on different rarity pokemon types###
+rare_by_hour=read.csv('rare_by_hour.csv')
+p3 <- ggplot(rare_by_hour, aes(x=hour, y=freq, group=rareness))
+p3 + geom_line(aes(colour = rareness))+xlab("hour")+labs(title = "appearance frequency by hour")
+
+###map###
+df_NY_rare=df_NY[df_NY$rareness=='rare',]
+
+leaflet(data =df_NY_rare[df_NY_rare$appearedTimeOfDay_morning==1,])%>%setView(lng = -74.0089, lat = 40.7301, zoom = 12) %>% addTiles() %>% addCircleMarkers(radius=2,color="Red",~longitude, ~latitude)
+leaflet(data =df_NY_rare[df_NY_rare$appearedTimeOfDay_afternoon==1,])%>%setView(lng = -74.0089, lat = 40.7301, zoom = 12) %>% addTiles() %>% addCircleMarkers(radius=2,color="Red",~longitude, ~latitude)
+leaflet(data =df_NY_rare[df_NY_rare$appearedTimeOfDay_evening==1,])%>%setView(lng = -74.0089, lat = 40.7301, zoom = 12) %>% addTiles() %>% addCircleMarkers(radius=2,color="Red",~longitude, ~latitude)
+leaflet(data =df_NY_rare[df_NY_rare$appearedTimeOfDay_night==1,])%>%setView(lng = -74.0089, lat = 40.7301, zoom = 12) %>% addTiles() %>% addCircleMarkers(radius=2,color="Red",~longitude, ~latitude)
+
+###311###
+NY_2015=read.csv('NY_2015.csv')
+NY_2016=read.csv('NY_2016.csv')
+NY_2016=NY_2016[complete.cases(NY_2016),]
+NY_2015=NY_2015[complete.cases(NY_2016),]
+t2016=NY_2016[NY_2016$Complaint.Type %in% c("Animal in a Park","Violation of Park Rules","Noise - Park"),]
+t2015=NY_2015[NY_2015$Complaint.Type %in% c("Animal in a Park","Violation of Park Rules","Noise - Park"),]
+
+leaflet(data =t2015[t2015$time=='morning',])%>%setView(lng = -74.0089, lat = 40.7301, zoom = 12) %>% addTiles() %>% addCircleMarkers(radius=2,color="Black",~Longitude, ~Latitude)
+leaflet(data =t2015[t2015$time=='afternoon',])%>%setView(lng = -74.0089, lat = 40.7301, zoom = 12) %>% addTiles() %>% addCircleMarkers(radius=2,color="Black",~Longitude, ~Latitude)
+leaflet(data =t2015[t2015$time=='evening',])%>%setView(lng = -74.0089, lat = 40.7301, zoom = 12) %>% addTiles() %>% addCircleMarkers(radius=2,color="Black",~Longitude, ~Latitude)
+leaflet(data =t2015[t2015$time=='night',])%>%setView(lng = -74.0089, lat = 40.7301, zoom = 12) %>% addTiles() %>% addCircleMarkers(radius=2,color="Black",~Longitude, ~Latitude)
+
+leaflet(data =t2016[t2016$time=='morning',])%>%setView(lng = -74.0089, lat = 40.7301, zoom = 12) %>% addTiles() %>% addCircleMarkers(radius=2,color="Orange",~Longitude, ~Latitude)
+leaflet(data =t2016[t2016$time=='afternoon',])%>%setView(lng = -74.0089, lat = 40.7301, zoom = 12) %>% addTiles() %>% addCircleMarkers(radius=2,color="Orange",~Longitude, ~Latitude)
+leaflet(data =t2016[t2016$time=='evening',])%>%setView(lng = -74.0089, lat = 40.7301, zoom = 12) %>% addTiles() %>% addCircleMarkers(radius=2,color="Orange",~Longitude, ~Latitude)
+leaflet(data =t2016[t2016$time=='night',])%>%setView(lng = -74.0089, lat = 40.7301, zoom = 12) %>% addTiles() %>% addCircleMarkers(radius=2,color="Orange",~Longitude, ~Latitude)
