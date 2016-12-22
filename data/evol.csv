@@ -1,0 +1,152 @@
+id,name,type,type2,evol
+1,Bulbasaur,Grass,Poison,Costs 25 Bulbasaur Candies to evolve into Ivysaur
+2,Ivysaur,Grass,Poison,Costs 100 Bulbasaur Candies to evolve into Venusaur
+3,Venusaur,Grass,Poison,Evolved form of Ivysaur
+4,Charmander ,Fire,,Costs 25 Charmander Candies to evolve into Charmeleon
+5,Charmeleon ,Fire,,Costs 100 Charmander Candies to evolve into Charizard
+6,Charizard,Fire,Flying,Evolved form of Charmeleon
+7,Squirtle,Water,,Costs 25 Squirtle Candies to evolve into Wartortle
+8,Wartortle,Water,,Costs 100 Squirtle Candies to evolve into Blastoise
+9,Blastoise,Water,,Evolved form of Wartortle
+10,Caterpie,Bug,,Costs 12 Caterpie Candies to evolve into Metapod
+11,Metapod,Bug,,Costs 50 Caterpie Candies to evolve into Butterfree
+12,Butterfree,Bug,Flying,Evolved form of Metapod
+13,Weedle,Bug,Poison,Costs 12 Weedle Candies to evolve into Kakuna
+14,Kakuna,Bug,Poison,Costs 50 Weedle Candies to evolve into Beedrill
+15,Beedrill,Bug,Poison,Evolved form of Kakuna
+16,Pidgey,Normal,Flying,Costs 12 Pidgey Candies to evolve into Pidgeotto
+17,Pidgeotto,Normal,Flying,Costs 50 Pidgey Candies to evolve into Pidgeot
+18,Pidgeot,Normal,Flying,Evolved form of Pidgeotto
+19,Rattata,Normal,,Costs 25 Rattata Candies to evolve into Raticate
+20,Raticate,Normal,,Evolved form of Rattata
+21,Spearow,Normal,Flying,Costs 50 Spearow Candies to evolve into Fearow
+22,Fearow,Normal,Flying,Evolved form of Spearow
+23,Ekans,Poison,,Costs 50 Ekans Candies to evolve into Arbok
+24,Arbok,Poison,,Evolved form of Ekans
+25,Pikachu,Electric,,Costs 50 Pikachu Candies to evolve into Raichu
+26,Raichu,Electric,,Evolved form of Pikachu
+27,Sandshrew,Ground,,Costs 50 Sandshrew Candies to evolve into Sandslash
+28,Sandslash,Ground,,Evolved form of Sandshrew
+29,Nidoran_,Poison,,Costs 25 Nidoran_ Candies to evolve into Nidorina
+30,Nidorina,Poison,,Costs 100 Nidoran_ Candies to evolve into Nidoqueen
+31,Nidoqueen,Poison,Ground,Evolved form of Nidorina
+32,Nidoran_,Poison,,Costs 25 Nidoran_ Candies to evolve into Nidorino
+33,Nidorino,Poison,,Costs 100 Nidoran_ Candies to evolve into Nidoking
+34,Nidoking,Poison,Ground,Evolved form of Nidorino
+35,Clefairy,Normal,,Costs 50 Clefairy Candies to evolve into Clefable
+36,Clefable,Normal,,Evolved form of Clefairy
+37,Vulpix,Fire,,Costs 50 Vulpix Candies to evolve into Ninetales
+38,Ninetales,Fire,,Evolved form of Vulpix
+39,Jigglypuff,Normal,,Costs 50 Jigglypuff Candies to evolve into Wigglytuff
+40,Wigglytuff,Normal,,Evolved form of Jigglypuff
+41,Zubat,Poison,Flying,Costs 50 Zubat Candies to evolve into Golbat
+42,Golbat,Poison,Flying,Evolved form of Zubat
+43,Oddish,Grass,Poison,Costs 25 Oddish Candies to evolve into Gloom
+44,Gloom,Grass,Poison,Costs 100 Oddish Candies to evolve into Vileplume
+45,Vileplume,Grass,Poison,Evolved form of Gloom
+46,Paras,Bug,Grass,Costs 50 Paras Candies to evolve into Parasect
+47,Parasect,Bug,Grass,Evolved form of Paras
+48,Venonat,Bug,Poison,Costs 50 Venonat Candies to evolve into Venomoth
+49,Venomoth,Bug,Poison,Evolved form of Venonat
+50,Diglett,Ground,,Costs 50 Diglett Candies to evolve into Dugtrio
+51,Dugtrio,Ground,,Evolved form of Diglett
+52,Meowth,Normal,,Costs 50 Meowth Candies to evolve into Persian
+53,Persian,Normal,,Evolved form of Meowth
+54,Psyduck,Water,,Costs 50 Psyduck Candies to evolve into Golduck
+55,Golduck,Water,,Evolved form of Psyduck
+56,Mankey,Fighting,,Costs 50 Mankey Candies to evolve into Primeape
+57,Primeape,Fighting,,Evolved form of Mankey
+58,Growlithe,Fire,,Costs 50 Growlithe Candies to evolve into Arcanine
+59,Arcanine,Fire,,Evolved form of Growlithe
+60,Poliwag,Water,,Costs 25 Poliwag Candies to evolve into Poliwhirl
+61,Poliwhirl,Water,,Costs 100 Poliwag Candies to evolve into Poliwrath
+62,Poliwrath,Water,Fighting,Evolved form of Poliwhirl
+63,Abra,Psychic,,Costs 25 Abra Candies to evolve into Kadabra
+64,Kadabra,Psychic,,Costs 100 Abra Candies to evolve into Alakazam
+65,Alakazam,Psychic,,Evolved form of Kadabra
+66,Machop,Fighting,,Costs 25 Machop Candies to evolve into Machoke
+67,Machoke,Fighting,,Costs 100 Machop Candies to evolve into Machamp
+68,Machamp,Fighting,,Evolved form of Machoke
+69,Bellsprout,Grass,Poison,Costs 25 Bellsprout Candies to evolve into Weepinbell
+70,Weepinbell,Grass,Poison,Costs 100 Bellsprout Candies to evolve into Victreebel
+71,Victreebel,Grass,Poison,Evolved form of Weepinbell
+72,Tentacool,Water,Poison,Costs 50 Tentacool Candies to evolve into Tentacruel
+73,Tentacruel,Water,Poison,Evolved form of Tentacool
+74,Geodude,Rock,Ground,Costs 25 Geodude Candies to evolve into Graveler
+75,Graveler,Rock,Ground,Costs 100 Geodude Candies to evolve into Golem
+76,Golem,Rock,Ground,Evolved form of Graveler
+77,Ponyta,Fire,,Costs 50 Ponyta Candies to evolve into Rapidash
+78,Rapidash,Fire,,Evolved form of Ponyta
+79,Slowpoke,Water,Psychic,Costs 50 Slowpoke Candies to evolve into Slowbro
+80,Slowbro,Water,Psychic,Evolved form of Slowpoke
+81,Magnemite,Electric,Steel,Costs 50 Magnemite Candies to evolve into Magneton
+82,Magneton,Electric,Steel,Evolved form of Magnemite
+83,Farfetch'd,Normal,Flying,No evolution
+84,Doduo,Normal,Flying,Costs 50 Doduo Candies to evolve into Dodrio
+85,Dodrio,Normal,Flying,Evolved form of Doduo
+86,Seel,Water,,Costs 50 Seel Candies to evolve into Dewgong
+87,Dewgong,Water,Ice,Evolved form of Seel
+88,Grimer,Poison,,Costs 50 Grimer Candies to evolve into Muk
+89,Muk,Poison,,Evolved form of Grimer
+90,Shellder,Water,,Costs 50 Shellder Candies to evolve into Cloyster
+91,Cloyster,Water,Ice,Evolved form of Shellder
+92,Gastly,Ghost,Poison,Costs 25 Gastly Candy to evolve to Haunter
+93,Haunter,Ghost,Poison,Costs 100 Gastly Candy to evolve to Haunter
+94,Gengar,Ghost,Poison,Evolved form of Haunter
+95,Onix,Rock,Ground,No evolution (currently)
+96,Drowzee,Psychic,,Costs 50 Drowzee Candies to evolve into Hypno
+97,Hypno,Psychic,,Evolved form of Drowzee
+98,Krabby,Water,,Costs 50 Krabby Candies to evolve to Kingler
+99,Kingler,Water,,Evolved form of Krabby
+100,Voltorb,Electric,,Costs 50 Voltorb Candies to evolve to Electrode
+101,Electrode,Electric,,Evolved form of Voltorb
+102,Exeggcute,Grass,Psychic,Costs 50 Exeggcute Candies to evolve to Exeggcutor
+103,Exeggcutor,Grass,Psychic,Evolved form of Exeggcute
+104,Cubone,Ground,,Costs 50 Cubone Candies to evolve to Marowak
+105,Marowak,Ground,,Evolved form of Cubone
+106,Hitmonlee,Fighting,,No evolution (currently)
+107,Hitmonchan,Fighting,,No evolution (currently)
+108,Lickitung,Normal,,No evolution (currently)
+109,Koffing,Poison,,Costs 50 Koffing Candies to evolve to Weezing
+110,Weezing,Poison,,Evolved form of Koffing
+111,Rhyhorn,Ground,Rock,Costs 50 Rhyhorn Candies to evolve to Rhydon
+112,Rhydon,Ground,Rock,Evolved form of Rhyhorn
+113,Chansey,Normal,,No evolution (currently)
+114,Tangela,Grass,,No evolution (currently)
+115,Kangaskhan,Normal,,No evolution (currently)
+116,Horsea,Water,,Costs 50 Horsea Candies to evolve to Seadra
+117,Seadra,Water,,Evolved form of Horsea
+118,Goldeen,Water,,Costs 50 Goldeen Candies to evolve to Seaking
+119,Seaking,Water,,Evolved form of Goldeen
+120,Staryu,Water,,Costs 50 Staryu Candies to evolve to Starmie
+121,Starmie,Water,,Evolved form of Staryu
+122,Mr.Mime,Psychic,,No evolution (currently)
+123,Scyther,Bug,Flying,Unknown if Scyther can currently evolve into Scizor in Pokémon GO
+124,Jynx,Ice,Psychic,Unknown if Jynx can currently evolve into Smoochum in Pokémon GO
+125,Electabuzz,Electric,,No evolution (currently)
+126,Magmar,Fire,,No evolution (currently)
+127,Pinsir,Bug,,No evolution (currently)
+128,Tauros,Normal,,No evolution
+129,Magikarp,Water,,Costs 400 Magikarp Candies to evolve to Gyarados
+130,Gyarados,Water,Flying,Evolved form of Magikarp
+131,Lapras,Water,Ice,No evolution
+132,Ditto,Normal,,Appears disguised as other Pokémon. When you catch a Ditto it reveals itself after capture.
+133,Eevee,Normal,,"Costs 25 Eevee Candies to evolve to Vaporeon, Jolteon or Flareon (random chance)"
+134,Vaporeon,Water,,Evolved form of Eevee
+135,Jolteon,Electric,,Evolved form of Eevee
+136,Flareon,Fire,,Evolved form of Eevee
+137,Porygon,Normal,,No evolution (currently)
+138,Omanyte,Rock,Water,Costs 50 Omanyte Candies to evolve to Omastar
+139,Omastar,Rock,Water,Evolved form of Omanyte
+140,Kabuto,Rock,Water,Costs 50 Kabuto Candies to evolve to Kabutops
+141,Kabutops,Rock,Water,Evolved form of Kabutops
+142,Aerodactyl,Rock,Flying,No evolution (currently)
+143,Snorlax,Normal,,No evolution
+144,Articuno,Ice,Flying,No Sightings Yet
+145,Zapdos,Electric,Flying,No Sightings Yet
+146,Moltres,Fire,Flying,No Sightings Yet
+147,Dratini,Dragon,,Costs 25 Dratini Candies to evolve into Dragonair
+148,Dragonair,Dragon,,Costs 100 Dratini Candies to evolve into Dragonite
+149,Dragonite,Dragon,Flying,Evolved form of Dragonair
+150,Mewtwo,Psychic,,No Sightings Yet
+151,Mew,Psychic,,No Sightings Yet
