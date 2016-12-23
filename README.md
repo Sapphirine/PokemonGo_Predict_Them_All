@@ -18,4 +18,6 @@
 # Run code
 - We run the .py file by jupyter notebook. Code can also be executed by python/anaconda compiler.
 - We run .R or .rmd code by r-studio.
-- To run the classifier models, first execute clean_poke.py to clean the data, and then run the classfier. Graph.R and 
+- To run the classifier models, first execute clean_poke.py to clean the data, and then run the classfier. 
+- Run maps.py to draw the pokemon distribution maps
+- Run graph.R to build e systemG cluster
